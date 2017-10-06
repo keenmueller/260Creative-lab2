@@ -1,1 +1,74 @@
-some-txt 
+body {
+    text-align: center;
+}
+
+button {
+    padding: 25px;
+    margin: 50px;
+    font-size: x-large;
+}
+
+h4 {
+    font-size: xx-large;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#header {
+    border: outset darkblue 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(17, 119, 23, 0.8);
+    background-size: cover;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#quiz-box {
+    margin: 20px;
+}
+
+#logo-box {
+
+}
+
+#result-box {
+    font-size: xx-large;
+}
+
+#crime-box {
+    font-size: x-large;
+}
+
+.fight-pics {
+    width: 350px;
+    height: 200px;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    border: solid black 5px;
+}
+
+.question {
+
+}
+
+#nfl-image-1 {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#nfl-image-2 {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
