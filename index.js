@@ -234,7 +234,6 @@ var start = function () {
             for (var i = 0; i < 16; i++){
                 newTeams[i] = teams[i];
                 coordinate[0] = "E";
-                // console.log(newTeams[i]);
             }
         }
         if (answer == 1) {
@@ -242,7 +241,6 @@ var start = function () {
             for (var i = 16; i < 32; i++){
                 newTeams[x] = teams[i];
                 coordinate[0] = "W";
-                // console.log(newTeams[x]);
                 x++;
             }
         }
@@ -264,7 +262,6 @@ var start = function () {
             for (var i = 0; i < 8; i++) {
                 newTeams[i] = oldTeams[i];
                 coordinate[1] = "N";
-                console.log(newTeams[i]);
             }
         }
         if (answer == 1) {
@@ -272,11 +269,9 @@ var start = function () {
             for (var i = 8; i < 16; i++) {
                 newTeams[x] = oldTeams[i];
                 coordinate[1] = "S";
-                console.log(newTeams[x]);
                 x++;
             }
         }
-        console.log(coordinate[0] + coordinate[1]);
         step++;
     }
 
@@ -288,7 +283,6 @@ var start = function () {
                     "<button onclick='answerOne()'>SeaFood</button>" +
                     "<button onclick='answerTwo()'>Steak</button>" +
                     "<button onclick='answerThree()'>Hamburger</button>";
-                console.log("Northeast")
             }
             if (coordinate[1] == "S") {
                 document.getElementById("quiz-box").innerHTML = "<h4>What is your dream vacation?</h4>" +
@@ -297,7 +291,6 @@ var start = function () {
                     "<button onclick='answerTwo()'>Mexico</button>" +
                     "<button onclick='answerThree()'>Japan</button>";
 
-                console.log("Southeast")
             }
         }
         if (coordinate[0] == "W"){
@@ -308,7 +301,6 @@ var start = function () {
                     "<button onclick='answerTwo()'>Watching Movies</button>" +
                     "<button onclick='answerThree()'>Hanging Out With Friends</button>";
 
-                console.log("Northwest")
             }
             if (coordinate[1] == "S") {
                 document.getElementById("quiz-box").innerHTML = "<h4>What is your favorite type of Music?</h4>" +
@@ -317,7 +309,6 @@ var start = function () {
                     "<button onclick='answerTwo()'>Country</button>" +
                     "<button onclick='answerThree()'>jazz</button>";
 
-                console.log("Southwest")
             }
         }
     }
@@ -329,7 +320,6 @@ var start = function () {
         if (color == "black"){
             for (var i = 0; i < 2; i++) {
                 newTeams[i] = oldTeams[i];
-                console.log(newTeams[i]);
             }
             document.getElementById("quiz-box").innerHTML = "<h4>There is a runaway trolley barreling down the railway tracks. " +
                 "Ahead, on the tracks, there are five people tied up and unable to move. " +
@@ -344,7 +334,6 @@ var start = function () {
             for (var i = 2; i < 4; i++) {
                 newTeams[x] = oldTeams[i];
                 x++;
-                console.log(newTeams[i]);
             }
             document.getElementById("quiz-box").innerHTML = "<h4>If Apple designed a car, would it have Windows?</h4>" +
                 "<button onclick='answerZero()'>Yes</button>" +
@@ -354,7 +343,6 @@ var start = function () {
             for (var i = 4; i < 6; i++) {
                 newTeams[x] = oldTeams[i];
                 x++;
-                console.log(newTeams[i]);
             }
             document.getElementById("quiz-box").innerHTML = "<img src='https://upload.wikimedia.org/wikipedia/en/a/a8/The_Dress_%28viral_phenomenon%29.png'/>" +
                 "<h4>What color is the dress?</h4>" +
@@ -365,7 +353,6 @@ var start = function () {
             for (var i = 6; i < 8; i++) {
                 newTeams[x] = oldTeams[i];
                 x++;
-                console.log(newTeams[i]);
             }
             document.getElementById("quiz-box").innerHTML = "<h4>Hi!</h4>" +
                 "<button onclick='answerZero()'>ummmm....What?</button>" +
@@ -399,14 +386,12 @@ var start = function () {
         if (answer == 0) {
             for (var i = 0; i < 8; i++) {
                 newPositions[i] = positions[i];
-                console.log(newPositions[i]);
             }
             step++;
         }
         if (answer == 1) {
             for (var i = 8; i < 16; i++) {
                 newPositions[x] = positions[i];
-                console.log(newPositions[x]);
                 x++;
             }
             step++;
@@ -414,7 +399,6 @@ var start = function () {
         if (answer == 2) {
             for (var i = 16; i < 18; i++) {
                 newPositions[x] = positions[i];
-                console.log(newPositions[x]);
                 x++;
             }
             step += 3;
@@ -440,27 +424,23 @@ var start = function () {
         if (answer == 0){
             for (var i = 0; i < 2; i++){
                 newPositions[i] = oldPositions[i];
-                console.log(newPositions[i]);
             }
         }
         if (answer == 1){
             for (var i = 2; i < 4; i++){
                 newPositions[x] = oldPositions[i];
-                console.log(newPositions[x]);
                 x++;
             }
         }
         if (answer == 2){
             for (var i = 4; i < 6; i++){
                 newPositions[x] = oldPositions[i];
-                console.log(newPositions[x]);
                 x++;
             }
         }
         if (answer == 3){
             for (var i = 6; i < 8; i++){
                 newPositions[x] = oldPositions[i];
-                console.log(newPositions[x]);
                 x++;
             }
         }
@@ -523,7 +503,6 @@ var start = function () {
             dataType : "json",
             success : function(parsed_json){
                 var length = parsed_json.length;
-                console.log("length " + length);
 
                 crime_list = "<ul>";
                 for (var i = 0; i < parsed_json.length; i++){
@@ -531,7 +510,6 @@ var start = function () {
                 }
 
                 crime_list += "</ul>";
-                console.log(crime_list);
                 document.getElementById("crime-box").innerHTML = crime_list;
             }
         });
